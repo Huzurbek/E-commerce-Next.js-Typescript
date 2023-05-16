@@ -5,13 +5,13 @@ import { Box } from "@mui/material";
 
 const CatalogSection = () => {
   return (
-    <Box sx={{ px: 2, mt: 9, pb: 5 }}>
+    <Box sx={{ px: 2 }}>
       <Title text="Каталог" />
       <Box
         sx={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(304px, 1fr))",
-          gap: "40px",
+          gap: { xs: "15px", sm: "40px" },
           boxSizing: "border-box",
         }}
       >
